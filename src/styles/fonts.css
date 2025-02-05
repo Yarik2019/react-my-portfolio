@@ -1,0 +1,20 @@
+@font-face {
+  font-display: swap;
+  font-family: "Quantico";
+  font-weight: 400;
+  src: url("../assets/fonts/Quantico-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Quantico";
+  font-weight: 700;
+  src: url("../assets/fonts/Quantico-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Source Sans Pro";
+  font-weight: 400;
+  src: url("../assets/fonts/Source-Sans-Pro-Regular.woff2") format("woff2");
+}

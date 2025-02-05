@@ -1,0 +1,69 @@
+@import "tailwindcss";
+@import "./styles/fonts.css";
+
+/* Default theme (Light Mode) */
+:root {
+  --background: #ffffff; /* White background */
+  --background-dropdown: #231e1e;
+  --border-dropdown: #ffcc00;
+  --text-color: #000; /* Dark gray text */
+  --text-color-yellow: #ffcc00; /* Golden yellow for highlights */
+  --transition-speed: 500ms;
+  --transition-timing-function: ease;
+  --font-quantico: "Quantico", "sans-serif";
+  --font-source-sans-pro: "Source Sans Pro", "sans-serif";
+
+  /* Apply the transition to all properties that may change */
+  transition: background-color var(--transition-speed)
+      var(--transition-timing-function),
+    color var(--transition-speed) var(--transition-timing-function),
+    background var(--transition-speed) var(--transition-timing-function),
+    font-family var(--transition-speed) var(--transition-timing-function);
+}
+
+/* Tailwind's dark mode class */
+:root[data-theme="dark"] {
+  --background: #231e1e; /* Dark background */
+  --background-dropdown: #ffffff;
+  --border-dropdown: #ffcc00;
+  --text-color-dropdown: #333333;
+  --text-color: #fff; /* White text for dark mode */
+  --text-color-yellow: #ffb11b; /* Yellow highlights in dark mode */
+  --transition-speed: 500ms;
+  --transition-timing-function: ease;
+
+  transition: background-color var(--transition-speed)
+      var(--transition-timing-function),
+    color var(--transition-speed) var(--transition-timing-function),
+    background var(--transition-speed) var(--transition-timing-function),
+    font-family var(--transition-speed) var(--transition-timing-function);
+}
+
+/* Light mode theme */
+:root[data-theme="light"] {
+  --background: #ffffff; /* White background */
+  --background-dropdown: #231e1e;
+  --border-dropdown: #ffcc00;
+  --text-color-dropdown: #fff;
+  --text-color: #000; /* Dark gray text */
+  --text-color-yellow: #ffcc00; /* Golden yellow for highlights */
+  --transition-speed: 500ms;
+  --transition-timing-function: ease;
+
+  /* Apply the transition to all properties that may change */
+  transition: background-color var(--transition-speed)
+      var(--transition-timing-function),
+    color var(--transition-speed) var(--transition-timing-function),
+    background var(--transition-speed) var(--transition-timing-function),
+    font-family var(--transition-speed) var(--transition-timing-function);
+}
+
+/* Theme definitions */
+@theme {
+  --color-background: var(--background);
+  --color-text-color: var(--text-color);
+  --color-color-yellow: var(--text-color-yellow);
+  --font-quantico: var(--font-quantico);
+  --font-source-sans-pro: var(--font-source-sans-pro);
+  --ease-snappy: cubic-bezier(0.2, 0, 0, 1);
+}

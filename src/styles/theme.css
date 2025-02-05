@@ -1,0 +1,29 @@
+:root {
+  --background-white: #ffffff;
+  --bg-btn-dark-gray: #323f47;
+  --bg-component-gray: #f0eff4;
+  --bg-component-green: #9be1a0;
+  --bg-component-dark-green: #87d28d;
+  --dark-gray-calendar: rgba(50, 63, 71, 0.2);
+  --text-color: #323f47;
+  --input-red: #ef5050;
+  --black: #2f2f2f;
+  --modal-backdrop: rgba(47, 47, 47, 0.6);
+  --menu-backdrop-color-light: rgba(50, 63, 71, 0.4);
+  transition: background-color 500ms ease;
+}
+
+/* dark theme*/
+.dark {
+  --background-white: #ffffff;
+  --bg-btn-dark-gray: #323f47;
+  --bg-component-gray: #f0eff4;
+  --bg-component-green: #9be1a0;
+  --dark-gray-calendar: rgba(50, 63, 71, 0.2);
+  --text-color: #323f47;
+  --input-red: #ef5050;
+  --black: #2f2f2f;
+  --modal-backdrop: rgba(47, 47, 47, 0.6);
+
+  transition: background-color 500ms ease;
+}
